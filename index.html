@@ -9,7 +9,6 @@
             <button>Generate QR Code</button>
         </p>
         <img id = "qrcode" src="" alt="">
-        <label id = "msg"> </label>
     </body>
     <script>
             function register() {
@@ -30,8 +29,8 @@
                 function showCode(sub) {
                 console.log('endpoint2:', sub.endpoint);
                 document.getElementById('qrcode').src='https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl='+sub.endpoint+'&choe=UTF-8';
-                var t = document.createTextNode("Please Scan this QR Code using connected App and continue. You may close this page afterwards.");
-                document.msg.appendChild(t);
+                var t = document.createTextNode("</br>Please Scan this QR Code using connected App and continue. You may close this page afterwards.");
+                document.body.appendChild(t);
                 }
             }
     </script>
