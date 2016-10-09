@@ -10,7 +10,7 @@ self.addEventListener('push', function(event) {
 
   var title = 'You Have Got a Call';  
   var body = 'Please check your mobile';  
-  var icon = 'images/call.png'; 
+  var icon = 'call.png'; 
     
   console.log('event:', event);
   event.waitUntil(  
