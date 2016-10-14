@@ -21,6 +21,12 @@ self.addEventListener('push', function(event) {
   );  
 });
 
+self.addEventListener('push', function(event) {
+  if (event.data) {
+    console.log(event.data.json());
+  }
+});
+
 
 // The user has clicked on the notification ...
 self.addEventListener('notificationclick', function(event) {
