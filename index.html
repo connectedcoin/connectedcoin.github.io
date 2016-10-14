@@ -21,6 +21,7 @@
                         userVisibleOnly: true
                 }).then(function(sub) {
                 console.log('endpoint:', sub.endpoint);
+                console.log('sub:', JSON.stringify(sub));
                 showCode(sub);
                 });
             }).catch(function(error) {
